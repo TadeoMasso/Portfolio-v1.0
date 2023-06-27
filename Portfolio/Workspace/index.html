@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Menu Titulos-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Tadeo Massó</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="images/Tadeo.jpg" alt="">
+            </div>
+            <h1>Tadeo Massó</h1>
+            <h2>Desarrollador Web Full Stack</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Seccion About-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p> <span>Hola soy Tadeo</span>
+                🧑‍💻 <em>Developer Full Stack, egresado de la academia virtual SoyHenry</em> 🧑‍💻.
+                <br>
+                Conociendome un poco soy una persona tranquila, me apasionan los videojuegos y me encantaria poder crear
+                alguno en el futuro. <br>
+                Busco oportunidades para seguir desarrollando mis habilidades y conocimientos, y estoy entusiasmado de
+                trabajar en proyectos desafiantes que me permitan crecer tanto profesional como personalmente
+                <br>
+            <ul>
+                <li>
+                    🔌 Code Skills: HTML, CSS, Javascript, React, Next JS, Redux/Redux Toolkit, Tailwind, Express, Git +
+                    Github.
+                </li>
+                <li>
+                    🔌 Database: MongoDB - Mongoose, Sqlite, PosgreSQL, Sequelize
+                </li>
+                <li>
+                    🔌 Design Skills: Figma
+                </li>
+            </ul>
+
+
+
+            </p>
+            <div class="fila">
+                <!--Datos Personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            20/01/03
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            3512611347
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            massotadeo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Dessarollador Full Stack Web
+                        </li>
+                    </ul>
+                </div>
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Videojuegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <span>Libros</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Gimnasio</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-radio"></i>
+                            <span>Musica </span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-paw"></i>
+                            <span>Animales</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>Amigos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-chess-rook"></i>
+                            <span>Juegos de Mesa</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Codigo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a class="textcv" href="Docs/Tadeo MAssó.pdf" download>Descargar CV <i
+                        class="fa-solid fa-download"></i></a>
+                <span class="overlay"> </span>
+            </button>
+        </div>
+
+    </section>
+    <!--Seccion Skills-->
+    <section class="skills" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades </h2>
+            <div class="fila">
+                <!--Habilidades Tech-->
+                <div class="col">
+                    <h3> Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML / CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Next</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>68%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redux / ToolKit</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3> Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Respeto/ Empatia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educacion</h3>
+                <div class="item izq">
+                    <h4>Academia virtual SoyHenry</h4>
+                    <span class="casa">SoyHenry</span>
+                    <span class="fecha">Duaracion 4 meses</span>
+                    <p>Mi primer paso hacia el mundo de la programacion, un bootcamp de 4 meses de duracion en que el
+                        cual aprendi no solo sobre el mundo de la programacion , si no tambien en varios aspectos como
+                        por ejemplo: habilidades blandas y resolucion de problemas</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Cursos de Udemy</h4>
+                    <span class="casa">Udemy</span>
+                    <span class="fecha">Actualidad</span>
+                    <p>Mientras cursaba el bootcamp de SoyHenry, me sume a varios cursos en referente al mismo ( todos
+                        con su correspondiente certificado ).
+                        Tambien me anote a otros cursos como por ejemplo desarrollo de videojuegos, entre otros
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Curso de Escobar programas</h4>
+                    <span class="casa">Escobar programa</span>
+                    <span class="fecha">Actualidad</span>
+                    <p>Un curso ofrecido por la municipalidad de mi ciudad, lo cual lo use como un "repaso" y me sirvio
+                        para poder seguir formandome.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col derecha">
+                <h3>Experiencia Laboral</h3>
+                <div class="item der">
+                    <h4>Carnicero</h4>
+                    <span class="casa">Carniceria Porquissimo</span>
+                    <span class="fecha">10/08/21 - 08/07/22</span>
+                    <p>Tareas a cargo: Atención al público, recepción y control de
+                        mercadería, desposte y producción, limpieza.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Asistente de enseñanza Henry (Full Stack Henry Bootcamp)</h4>
+                    <span class="casa">SoyHenry</span>
+                    <span class="fecha">04/23 - 05/23</span>
+                    <p>Tareas principales:
+                        <br> • Coordinar el grupo de estudiantes con el objetivo de lograr su adaptación al programa
+                        <br> • Orientar a los estudiantes en los primeros pasos de la cursada y resolver sus inquietudes
+                        <br> • Asistir y acompañar en la resolución de ejercicios y promover la colaboración grupal (Pair
+                        Programming).
+                        <br> • Proponer ideas para la mejora de los procesos del Bootcamp.
+                        <br> • Promover la cohesión grupal y generar comunidad
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>A futuro</h4>
+                    <span class="casa">Espera a nuevas aventuras</span>
+                    <span class="fecha">--</span>
+                    <p>Busco oportunidades para seguir desarrollando mis habilidades y conocimientos, y estoy
+                        entusiasmado de
+                        trabajar en proyectos desafiantes que me permitan crecer tanto profesional como personalmente
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Porfolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="images/xd.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Puesto</h3>
+                        <p>Detalle</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/xd.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Puesto</h3>
+                        <p>Detalle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--Form-->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Nro telefonico">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>Enviar <i class="fa-solid fa-share-from-square"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Map-->
+                <div class="col">
+                    <img src="images/backgroundMap.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-thumbtack"></i>
+                                Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                543512611347
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelopes-bulk"></i>
+                                massotadeo@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
